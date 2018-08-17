@@ -580,7 +580,7 @@ In this step we will be tweaking our calculator to handle certain scenarios. If 
 ```jsx
 setDisplay(num) {
   var display = ( this.state.display === '0' ) ? num : this.state.display + num;
-  this.setState({ display: (this.state.display.length < 13) ? display : this.state.display })
+  this.setState({ display: (this.state.display.length < 13) ? this.state.display + 1
 }
 ```
 
